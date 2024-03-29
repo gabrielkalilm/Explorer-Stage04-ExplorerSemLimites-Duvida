@@ -1,0 +1,291 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62,5%;
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  --font-color-pink: #B52184;
+  --font-color-blue: #312D64;
+  --font-color-white: #FFF;
+  --bg-color-pink-100: #F9F4FB;;
+  --bg-color-blue-900: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  --bg-color-blue-700: linear-gradient(96deg, #2e6293 0%, #272362 99.68%);
+  --bg-color-white: #FFF;
+ }
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.exploreSemLimites {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--bg-color-pink-100);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exploreSemLimites section h1 {
+  color: var(--font-color-pink);
+  margin-top: 1.7rem; 
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.exploreSemLimites section p {
+  color: var(--font-color-blue);
+  margin-bottom: 3.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#arrow {
+  margin-bottom: 9.3rem;
+}
+
+
+.planets {
+  background: var(--bg-color-blue-900);
+  width: 100vw;
+  padding: 5.2rem 3.9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.planet-wrapper {
+  background: var(--bg-color-white);
+  padding: 2.6rem;
+  max-width: 35rem;
+  max-height: 34rem;
+  border-radius: 2rem;
+
+}
+
+.planet-wrapper img {
+  margin-bottom: 3.3rem;
+}
+
+.planet-wrapper h1 {
+  margin-bottom: 2rem;
+  color: var(--font-color-pink);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.planet-wrapper p {
+  margin-right: 3.4rem;
+  color: var(--font-color-blue);
+  font-weight: 600;
+}
+
+form {
+  background: var(--bg-color-pink-100);
+  width: 100vw;
+  
+  padding: 6.5rem 3.9rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+form legend {
+  color: var(--font-color-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-right: 8rem;
+}
+
+.input-wrapper {
+  width: 35rem;
+  height: 4.8rem;
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  display: flex;
+  gap: 1.2rem;
+  padding-left: 1.4rem;
+  
+}
+
+.input-wrapper:hover, textarea:hover{
+  outline: 2px solid #312D64;
+  border: 2px solid #312D64;
+}
+
+form input {
+  border: 0;
+  background: var(--bg-color-pink-100);
+  width: 100%;
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.2rem 0;
+}
+
+form input:focus, form textarea:focus{
+  outline: none;
+}
+
+::placeholder {
+  color: var(--font-color-blue);
+  font-weight: 600;
+  line-height: 140%;
+  opacity: 1;
+}
+
+textarea {
+  width: 35rem;
+  height: 12rem;
+  background: var(--bg-color-pink-100);
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
+  padding-inline: 1.4rem;
+  padding: 1.2rem 1.6rem;
+  
+}
+
+form button{
+  color: var(--font-color-white);
+  background: var(--bg-color-blue-900);
+  padding: 1.6rem;
+  margin-right: 24rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  border: 0;
+}
+
+form button:hover{
+  background: var(--bg-color-blue-700);
+  
+}
+
+footer {
+  
+  color: var(--font-color-white);
+  background: var(--bg-color-blue-900);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+}
+
+@media (min-width: 1440px) {
+
+  :root{
+    font-size: 62,5%;
+    font-size: 1.6rem;
+    font-family: "Mulish", sans-serif;
+  }
+
+ .exploreSemLimites {
+  gap: 2.8px;
+  padding: 0 0 100px 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  place-content: center;
+  
+ }
+
+ #astronaut {
+  margin: 0;
+  padding: 0;
+  }
+
+ section {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+ }
+
+ .exploreSemLimites section h1 {
+  
+  font-size: 58px;
+  margin: 0;
+  margin-top: 300px;
+  padding: 0;
+ }
+ .exploreSemLimites section p {
+  margin: 0;
+  margin-bottom: 180px;
+  font-size: 32px;
+  padding: 0;
+ }
+
+ #arrow {
+  margin: 0;
+  padding: 0;
+ }
+
+.planets {
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  place-content: center;
+  grid-column-gap: 60px;
+  padding: 64px 111px;
+}
+
+#planetOne {
+grid-column: 1;
+}
+
+#planetTwo {
+  grid-column: 2;
+}
+
+#planetThree {
+  grid-column: 3;
+}
+
+.planet-wrapper {
+  margin: 0;
+  padding: 0;
+  padding: 32px;
+  max-width: 366px;
+  max-height: 488px;
+}
+
+.planet-wrapper h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+
+.planet-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+}
+
+.planet-wrapper img {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+}
